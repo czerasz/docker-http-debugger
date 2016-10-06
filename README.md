@@ -6,7 +6,7 @@ This repository contains **Dockerfile** for [Docker](https://www.docker.com/)'s 
 
 ## Base Docker Image
 
-* [node:latest](https://registry.hub.docker.com/_/node/)
+* [node:6.7.0-slim](https://registry.hub.docker.com/_/node/)
 
 
 ## Installation
