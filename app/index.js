@@ -132,6 +132,8 @@ var server = app.listen(listen, function () {
     var port = server.address().port;
     console.log('Debugging app listening at http://%s:%s', host, port);
   } else {
+    // Change socket permissions to make it available to other users
+    require('fs').chmodSync(listen, '777');
     console.log('Debugging app listening at %s', listen);
   }
 
