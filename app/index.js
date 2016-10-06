@@ -1,10 +1,10 @@
 // The application returns log messages which are useful for HTTP debugging
-// 
+//
 // Example output:
 // [2015-05-06 10:12:10] Request 2
-// 
+//
 // POST/1.1 /test-path?test=value on :::3000
-// 
+//
 // Headers:
 //  - user-agent: curl/7.38.0
 //  - accept: */*
@@ -12,10 +12,10 @@
 //  - host: czerasz.com
 //  - content-length: 9
 //  - content-type: application/x-www-form-urlencoded
-// 
+//
 // Cookies:
 //  - USER_TOKEN: Yes
-// 
+//
 // Body:
 // some data
 
@@ -31,7 +31,7 @@ var app = express();
 var request_counter = 0;
 
 // Create a method which returns the current date in a log format
-// 
+//
 // Resource: http://stackoverflow.com/questions/3605214/javascript-add-leading-zeroes-to-date
 var currentDateString = function (date){
     function pad(n){
