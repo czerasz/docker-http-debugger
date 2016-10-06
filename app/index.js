@@ -98,8 +98,19 @@ app.all('*', function (req, res) {
     console.log(body);
   });
 
+  var responseObject = {
+    count: request_counter,
+    date: currentDateString(),
+    method: req.method,
+    http_version: req.httpVersion,
+    url: req.originalUrl,
+    headers: req.headers,
+    cookies: req.cookies,
+    body: body
+  };
+
   res.header('X-Debug', true);
-  res.send('ok');
+  res.json(responseObject);
 });
 
 // Start the HTTP server
