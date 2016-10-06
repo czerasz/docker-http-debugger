@@ -84,6 +84,8 @@ SOCKET_DIRECTORY=/var/app/app_name/shared/tmp/sockets/
 mkdir -p $SOCKET_DIRECTORY
 ```
 
+Run the container:
+
 ```
 docker run -t --rm \
        -v $SOCKET_DIRECTORY:$SOCKET_DIRECTORY \
