@@ -1,7 +1,7 @@
-FROM node:6.7.0-slim
+FROM node:25.2.1-slim
 
 # Set the reset cache variable
-ENV REFRESHED_AT=2016-10-06 DEBIAN_FRONTEND=noninteractive
+ENV REFRESHED_AT=2025-12-08 DEBIAN_FRONTEND=noninteractive
 
 # Update packages list
 # Install useful packages
